@@ -6,26 +6,37 @@ A robust Retrieval-Augmented Generation (RAG) system tailored for medical data. 
 
 ## 📂 Project Structure
 
-\`\`\`text
-medical-rag/
+Medical-bot-Rag-Pipeline/
+
 │
-├── app.py              # Streamlit frontend (User Interface)
-├── ingest.py           # Data ingestion & FAISS index creation
-├── rag_pipeline.py     # Core RAG logic (Embeddings, Retrieval, LLM Integration)
-├── main.py             # FastAPI backend (API routing & endpoints)
+
+├── app.py              # Streamlit frontend
+
+├── ingest.py           # Data ingestion + FAISS index creation
+
+├── rag_pipeline.py     # RAG pipeline definition
+
+├── main.py             # FastAPI backend
+
 ├── requirements.txt    # Python dependencies
-├── Dockerfile          # Containerization instructions
-├── README.md           # Project documentation
-├── .env                # Environment variables (API keys, config)
-│
+
+├── Dockerfile          # Docker build file
+
+├── README.md
+
+└── .env
+
 ├── .github/
+
 │   └── workflows/
-│       └── ci-cd.yml   # GitHub Actions CI/CD pipeline
-│
-└── data/               # Raw and formatted dataset directory
+
+│       └── ci-cd.yml   # GitHub Actions pipeline
+
+└── data/
+
     ├── chatdoctor5k.json
+
     └── format_dataset.csv
-\`\`\`
 
 ---
 
